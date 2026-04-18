@@ -50,41 +50,11 @@ function load_city_list() {
       country = api.fn.answers().B1a_1_text;
       console.log("B1b country: ", country);
       break;     
-    case "B2_2":
+    case "B2_3":
       country = api.fn.answers().B2_2_1_text;
-      console.log("B2_2 country: ", country);      
+      console.log("B2_3 country: ", country);      
       break;     
-    case "B7":
-      country = "_all"; 
-      break;                  
-    case "C7":
-      if (api.fn.answers().C6) {
-        country = api.fn.answers().C6;
-      } 
-    break;          
-    case "C11":
-      country = "_all"; 
-      break;                      
-    case "D1A":
-      country = "_all"; 
-      break;                               
-    case "D3":
-      if (api.fn.answers().D2) {
-        country = api.fn.answers().D2;
-      } 
-      break;              
-    case "D7":
-      country = "_all"; 
-      break;                                       
-    case "D11":
-      country = "_all"; 
-      break;                                       
-    case "E1":
-      country = "_all"; 
-      break;                                       
-    case "E8":
-      country = "_all"; 
-      break;                   
+                 
     default:
       country = "_all";
       break;         
@@ -187,50 +157,22 @@ function select_city() {
   console.log("Saving data...", savedData);
   //store detail data here
   switch (cityCurrentQuestion) {
-    case "A2b":
-      api.fn.answers({A2b_ext:  savedData});
-      api.fn.answers({A2b:  savedData});
+    case "B1b":
+      api.fn.answers({B1b:  savedData});
       break;
-    case "B3":
-      api.fn.answers({B3_ext:  savedData});
-      api.fn.answers({B3:  savedData});
+    case "B2_1":
+      api.fn.answers({B2_1:  savedData});
+      break;          
+    case "B2_3":
+      api.fn.answers({B2_3:  savedData});
       break;     
-    case "B7":
-        api.fn.answers({B7_ext:  savedData});
-        api.fn.answers({B7:  savedData});
-        break;                  
-    case "C7":
-        api.fn.answers({C7_ext:  savedData});
-        api.fn.answers({C7:  savedData});
-        break;                
-    case "C11":
-      api.fn.answers({C11_ext:  savedData});
-      api.fn.answers({C11:  savedData});
-      break;                
-    case "D1A":
-      api.fn.answers({D1A_ext:  savedData});
-      api.fn.answers({D1A:  savedData});
-      break;                
-    case "D3":
-        api.fn.answers({D3_ext:  savedData});
-        api.fn.answers({D3:  savedData});
-        break;                
-    case "D7":
-      api.fn.answers({D7_ext:  savedData});
-      api.fn.answers({D7:  savedData});
-      break;                
-    case "D11":
-      api.fn.answers({D11_ext:  savedData});
-      api.fn.answers({D11:  savedData});
-      break;    
-    case "E1":
-      api.fn.answers({E1_ext:  savedData});
-      api.fn.answers({E1:  savedData});
-      break;            
-    case "E8":
-      api.fn.answers({E8_ext:  savedData});
-      api.fn.answers({E8:  savedData});
-      break;             
+    case "B2_5":
+      api.fn.answers({B2_5:  savedData});
+      break;  
+    case "B2_9":
+      api.fn.answers({B2_9:  savedData});
+      break;  
+
     default:
       break;         
   }
