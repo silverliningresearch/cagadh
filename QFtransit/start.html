@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>FITV Survey</title>
+  <title>Transit Passengers Survey</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
 <style>
@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 
-.red {background-color: #e00029;;} /* Red */
+.red {background-color: #f44336;;} /* Red */
 .blue {background-color: #008CBA;;} /* Blue */ 
 
 </style>
@@ -37,26 +37,23 @@
       console.log("start_new_interview");
       window.localStorage.clear();
 
-      let url = "https://silverliningresearch.github.io/fitv/survey.html";
+      let url = "https://silverliningresearch.github.io/cagadh/QFtransit/survey";
       window.location.href = url;
     }
 
     function resume_curent_interview() {
       console.log("resume_curent_interview");
-      let url = "https://silverliningresearch.github.io/fitv/survey.html";
+      let url = "https://silverliningresearch.github.io/cagadh/QFtransit/survey";
       window.location.href = url;
     }
 
 </script>
   <!-- <h2>BER PASSENGER SURVEY</h2> -->
- </br>
-    <h2 align="center">FITV Survey</h2>
   </br>
-  
-<div align="center">  
+  </br>
   <button onclick="start_new_interview()" class="button red">Start a new interview</button>
   <button onclick="resume_curent_interview()" class="button blue">Resume the current interview </button>
-</div>
+
   <p>
 	</br>
     *<strong>Resume the current interview</strong> will continue from the last question in the current interview.</br>
@@ -66,17 +63,18 @@
 
   <div style="background-color: lightblue;">
   </br>
-  </div> 
-  
-  <!-- <h2>
+  </div>
+
+  <h2>
     Interviewer Information
   </h2>
-  <h3>
+  <!-- <h3>
+    </br>
+    <a href="https://silverliningresearch.github.io/CAG_AirHub/DailyPlan.html" target="_blank">
+Daily Plan - CAG Airhub Survey
+    </a> -->
+  </h3>
 
-    <a href="https://silverliningresearch.github.io/dxbt3queue/DailyPlan.html" target="_blank">
-      Daily Plan - DOHA - Late Call Survey
-    </a>
-  </h3> -->
 
 </body>
 </html>

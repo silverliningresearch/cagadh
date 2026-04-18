@@ -1,11 +1,11 @@
 #inputFlightCodeID {
-    position: absolute;
+    /* position: absolute; */
     max-width: 100%;
     width: 30rem;
 } 
 
-#inputPostalCodeID {
-    position: absolute;
+#inputcityCodeID {
+    /* position: absolute; */
     max-width: 100%;
     width: 30rem;
 } 

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transit Passengers Survey</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link
+      rel="stylesheet"
+      href="https://survalyzereu.blob.core.windows.net/public/assets/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://survalyzereu.blob.core.windows.net/public/assets/dx.common.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://survalyzereu.blob.core.windows.net/public/assets/dx.light.css"
+    />
+    <link
+      href="https://survalyzer.survalyzer.eu/assets/themes/default/rt-theme.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link href="css/postal-code-search-box.css" rel ="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <survalyzer-survey
+      surveyhash="xxxqxgvvma"
+      tenant="silverlining"
+    ></survalyzer-survey>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://survalyzer.survalyzer.eu/assets/survalyzer-survey.js"></script>
+
+    <script src="data/city_list.js"></script>
+    <script src="data/country_list.js"></script>
+    
+    <script src="scripts/city_search.js"></script>
+
+    <script>
+        window.addEventListener('load', function () {
+        setTimeout(() => {
+          const listSearchHandler = () => {
+            console.log("Current Page Index: ", api.fn.getCurrentPageIndex() );
+
+            // if (api.fn.getCurrentPageIndex() === 1) {
+            //   show_flight_search_box();
+            // } else {
+            //   hide_flight_search_box();
+            // }
+             
+            switch (api.fn.getCurrentPageIndex()) {
+              case 7:
+                show_city_search_box("B1b");
+                break;
+              case 8:
+                show_city_search_box("B2_1"); 
+                break;    
+              case 10:
+                show_city_search_box("B2_2"); 
+                break;                              
+              // case 14:
+              //   show_city_search_box("B3");
+              //   break;     
+              // case 18:
+              //   show_city_search_box("B7");
+              //   break;                  
+              // case 31:
+              //   show_city_search_box("C7");
+              //   break;          
+              // case 35:
+              //   show_city_search_box("C11");
+              //   break;                      
+              // case 43:
+              //   show_city_search_box("D1A");
+              //   break;                               
+              // case 45:
+              //   show_city_search_box("D3");
+              //   break;              
+              // case 49:
+              //   show_city_search_box("D7");
+              //   break;                                       
+              // case 53:
+              //   show_city_search_box("D11");
+              //   break;                                       
+              // case 70:
+              //   show_city_search_box("E8");
+              //   break;                   
+              default:
+                hide_city_search_box();
+                break;         
+            }
+
+          };
+
+          api.events.subscribe('next', listSearchHandler);
+          api.events.subscribe('back', listSearchHandler);
+          api.events.subscribe('startedOrContinued', listSearchHandler);
+        });
+      });
+    </script>
+</body>
+</html>
