@@ -46,14 +46,11 @@ function load_city_list() {
   var country_code;
 
   switch (cityCurrentQuestion) {
-    case "B1b":
-      country = api.fn.answers().B1a_1_text;
-      console.log("B1b country: ", country);
+    case "A2":
+      country = api.fn.answers().A2_1_text;
+      console.log("A2 country: ", country);
       break;     
-    case "B2_3":
-      country = api.fn.answers().B2_2_1_text;
-      console.log("B2_3 country: ", country);      
-      break;     
+
                  
     default:
       country = "_all";
@@ -157,21 +154,12 @@ function select_city() {
   console.log("Saving data...", savedData);
   //store detail data here
   switch (cityCurrentQuestion) {
-    case "B1b":
-      api.fn.answers({B1b:  savedData});
+    case "B1":
+      api.fn.answers({B1:  savedData});
       break;
-    case "B2_1":
-      api.fn.answers({B2_1:  savedData});
-      break;          
-    case "B2_3":
-      api.fn.answers({B2_3:  savedData});
-      break;     
-    case "B2_5":
-      api.fn.answers({B2_5:  savedData});
-      break;  
-    case "B2_9":
-      api.fn.answers({B2_9:  savedData});
-      break;  
+    case "B3":
+      api.fn.answers({B3:  savedData});
+      break;
 
     default:
       break;         
