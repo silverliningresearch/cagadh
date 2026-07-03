@@ -49,8 +49,12 @@ function load_city_list() {
     case "A2":
       country = api.fn.answers().A2_1_text;
       console.log("A2 country: ", country);
-      break;     
+      break;   
 
+    case "B3":
+      country = api.fn.answers().B3_Country_1_text;
+      console.log("B3_Country: ", country);
+      break;     
                  
     default:
       country = "_all";
