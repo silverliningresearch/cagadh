@@ -46,7 +46,7 @@ function load_city_list() {
   var country_code;
 
   switch (cityCurrentQuestion) {
-    case "A2":
+    case "B1":
       country = api.fn.answers().A2_1_text;
       console.log("A2 country: ", country);
       break;   
@@ -159,10 +159,10 @@ function select_city() {
   //store detail data here
   switch (cityCurrentQuestion) {
     case "B1":
-      api.fn.answers({B1:  savedData});
+      api.fn.answers({B1_city:  savedData});
       break;
     case "B3":
-      api.fn.answers({B3:  savedData});
+      api.fn.answers({B3_city:  savedData});
       break;
 
     default:
