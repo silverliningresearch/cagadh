@@ -10,11 +10,11 @@ function CalculateAirportAirLineReport() {
   total_completed = 0;
   total_quota_completed = 0;
 
-  for (i = 0; i < quota_data.length; i++) {//airport_airline_report.length;
+  for (i = 0; i < quota_data.length; i++) {//quota_id_report.length;
     row = quota_data[i];
     row.Completed = 0;
     for (j = 0; j < interview_data.length; j++) {
-    if (row.Airport_Airline.toUpperCase() == interview_data[j].Airport_Airline.toUpperCase()) 
+    if (row.quota_id.toUpperCase() == interview_data[j].quota_id.toUpperCase()) 
       { 
         row.Completed = row.Completed + interview_data[j].completed_interviews;
       }
@@ -37,10 +37,10 @@ function CalculateAirportAirLineReport() {
 
   }
 
-  for (i = 0; i < daily_plan_data.length; i++) {//airport_airline_report.length;
+  for (i = 0; i < daily_plan_data.length; i++) {//quota_id_report.length;
     row = daily_plan_data[i];
     for (j = 0; j < quota_data.length; j++) {
-      if (row.Airport_Airline.toUpperCase() == quota_data[j].Airport_Airline.toUpperCase()) 
+      if (row.quota_id.toUpperCase() == quota_data[j].quota_id.toUpperCase()) 
       {
         if ( quota_data[j].Difference < 0) {
           row.doop = quota_data[j].doop;
@@ -100,7 +100,7 @@ function CalculateDOOP() {
     var sun =0;
 
     for (j = 0; j < this_month_flight_list.length; j++) {
-      if (quota_data[i].Airport_Airline.toUpperCase() == this_month_flight_list[j].Airport_Airline.toUpperCase()) 
+      if (quota_data[i].quota_id.toUpperCase() == this_month_flight_list[j].quota_id.toUpperCase()) 
       {
         switch (getDOOP( this_month_flight_list[j].Date)) {
           case 0:
