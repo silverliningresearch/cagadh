@@ -130,15 +130,17 @@ function prepareInterviewData() {
   for (i = 0; i < interview_data_temp.length; i++) {
     var interview = interview_data_temp[i];
 
+    interview.Interview_Date = interview.InterviewDate;
     if (isCurrentMonth(interview.Interview_Date))
     {
-      if (interview["Dest"] &&  interview["AirlineCode"]) 
+      // if (interview["Dest"] &&  interview["AirlineCode"]) 
       {
-        var airport_code = interview["Dest"];
-        var airline_code = interview["AirlineCode"];
+        // var airport_code = interview["Dest"];
+        // var airline_code = interview["AirlineCode"];
 
-        interview.quota_id = airport_code + " - " + airline_code;
+        // interview.quota_id = airport_code + " - " + airline_code;
         interview.InterviewEndDate = interview["Interview_Date"] ;
+        interview.completed_interviews = interview["Number of interviews"];
         
         interview_data.push(interview);
       }
