@@ -10,7 +10,7 @@ var currentDate;
 var nextDate;
 var download_time;
 
-var total_quota = 2500;
+var total_quota = 385;
 var total_completed;
 
 var total_quota_completed;

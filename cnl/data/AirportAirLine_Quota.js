@@ -1,58 +1,323 @@
 let quota_id_quota = ` 
 [
-    {"quota_id": "CZ 8490", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "EK 349", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "JL 38", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "MF 8676", "Quota": 8, "Period": "11-2026"},
-    {"quota_id": "QR 945", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "TK 169", "Quota": 5, "Period": "11-2026"},
-    {"quota_id": "TK 23", "Quota": 9, "Period": "11-2026"},
-    {"quota_id": "TR 100", "Quota": 12, "Period": "11-2026"},
-    {"quota_id": "TR 156", "Quota": 5, "Period": "11-2026"},
-    {"quota_id": "TR 234", "Quota": 3, "Period": "11-2026"},
-    {"quota_id": "TR 254", "Quota": 3, "Period": "11-2026"},
-    {"quota_id": "TR 284", "Quota": 3, "Period": "11-2026"},
-    {"quota_id": "TR 298", "Quota": 3, "Period": "11-2026"},
-    {"quota_id": "TR 318", "Quota": 2, "Period": "11-2026"},
-    {"quota_id": "TR 330", "Quota": 2, "Period": "11-2026"},
-    {"quota_id": "TR 336", "Quota": 2, "Period": "11-2026"},
-    {"quota_id": "TR 456", "Quota": 2, "Period": "11-2026"},
-    {"quota_id": "TR 50", "Quota": 3, "Period": "11-2026"},
-    {"quota_id": "TR 52", "Quota": 6, "Period": "11-2026"},
-    {"quota_id": "TR 572", "Quota": 5, "Period": "11-2026"},
-    {"quota_id": "TR 584", "Quota": 3, "Period": "11-2026"},
-    {"quota_id": "TR 60", "Quota": 5, "Period": "11-2026"},
-    {"quota_id": "TR 842", "Quota": 5, "Period": "11-2026"},
-    {"quota_id": "TR 880", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "ZH 228", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "6E 1008", "Quota": 12, "Period": "11-2026"},
-    {"quota_id": "6E 1248", "Quota": 10, "Period": "11-2026"},
-    {"quota_id": "6E 1264", "Quota": 10, "Period": "11-2026"},
-    {"quota_id": "8M 236", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "ET 639", "Quota": 8, "Period": "11-2026"},
-    {"quota_id": "MM 774", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "SQ 612", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "TW 166", "Quota": 12, "Period": "11-2026"},
-    {"quota_id": "BS 308", "Quota": 12, "Period": "11-2026"},
-    {"quota_id": "CI 756", "Quota": 12, "Period": "11-2026"},
-    {"quota_id": "FM 844", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "MU 882", "Quota": 4, "Period": "11-2026"},
-    {"quota_id": "MU 898", "Quota": 3, "Period": "11-2026"},
-    {"quota_id": "MU 9648", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "SQ 302", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "SQ 314", "Quota": 11, "Period": "11-2026"},
-    {"quota_id": "SQ 330", "Quota": 10, "Period": "11-2026"},
-    {"quota_id": "SQ 402", "Quota": 12, "Period": "11-2026"},
-    {"quota_id": "SQ 422", "Quota": 0, "Period": "11-2026"},
-    {"quota_id": "SQ 846", "Quota": 10, "Period": "11-2026"},
-    {"quota_id": "SV 857", "Quota": 4, "Period": "11-2026"},
-    {"quota_id": "5J 284", "Quota": 5, "Period": "11-2026"},
-    {"quota_id": "DV 778", "Quota": 2, "Period": "11-2026"},
-    {"quota_id": "GS 7964", "Quota": 6, "Period": "11-2026"},
-    {"quota_id": "HO 1562", "Quota": 7, "Period": "11-2026"},
-    {"quota_id": "HU 448", "Quota": 7, "Period": "11-2026"},
-    {"quota_id": "HU 7910", "Quota": 5, "Period": "11-2026"},
-    {"quota_id": "PN 6444", "Quota": 5, "Period": "11-2026"}
+    {
+        "Period": "11-2026",
+        "quota_id": "CZ 8490",
+        "Quota": 11,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "EK 349",
+        "Quota": 11,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "JL 38",
+        "Quota": 11,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "MF 8676",
+        "Quota": 8,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "QR 945",
+        "Quota": 11,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TK 169",
+        "Quota": 5,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TK 23",
+        "Quota": 9,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 100",
+        "Quota": 12,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 156",
+        "Quota": 5,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 234",
+        "Quota": 3,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 254",
+        "Quota": 3,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 284",
+        "Quota": 3,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 298",
+        "Quota": 3,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 318",
+        "Quota": 2,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 330",
+        "Quota": 2,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 336",
+        "Quota": 2,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 456",
+        "Quota": 2,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 50",
+        "Quota": 3,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 52",
+        "Quota": 6,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 572",
+        "Quota": 5,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 584",
+        "Quota": 3,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 60",
+        "Quota": 5,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 842",
+        "Quota": 5,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TR 880",
+        "Quota": 11,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "ZH 228",
+        "Quota": 11,
+        "DTerm": 1
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "6E 1008",
+        "Quota": 12,
+        "DTerm": 2
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "6E 1248",
+        "Quota": 10,
+        "DTerm": 2
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "6E 1264",
+        "Quota": 10,
+        "DTerm": 2
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "8M 236",
+        "Quota": 11,
+        "DTerm": 2
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "ET 639",
+        "Quota": 8,
+        "DTerm": 2
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "MM 774",
+        "Quota": 11,
+        "DTerm": 2
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "SQ 612",
+        "Quota": 11,
+        "DTerm": 2
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "TW 166",
+        "Quota": 12,
+        "DTerm": 2
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "BS 308",
+        "Quota": 12,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "CI 756",
+        "Quota": 12,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "FM 844",
+        "Quota": 11,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "MU 882",
+        "Quota": 4,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "MU 898",
+        "Quota": 3,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "MU 9648",
+        "Quota": 11,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "SQ 302",
+        "Quota": 11,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "SQ 314",
+        "Quota": 11,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "SQ 330",
+        "Quota": 10,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "SQ 402",
+        "Quota": 12,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "SQ 422",
+        "Quota": 0,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "SQ 846",
+        "Quota": 10,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "SV 857",
+        "Quota": 4,
+        "DTerm": 3
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "5J 284",
+        "Quota": 5,
+        "DTerm": 4
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "DV 778",
+        "Quota": 2,
+        "DTerm": 4
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "GS 7964",
+        "Quota": 6,
+        "DTerm": 4
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "HO 1562",
+        "Quota": 7,
+        "DTerm": 4
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "HU 448",
+        "Quota": 7,
+        "DTerm": 4
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "HU 7910",
+        "Quota": 5,
+        "DTerm": 4
+    },
+    {
+        "Period": "11-2026",
+        "quota_id": "PN 6444",
+        "Quota": 5,
+        "DTerm": 4
+    }
 
 ]    
 

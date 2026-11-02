@@ -58,7 +58,8 @@
         var data = new google.visualization.DataTable();
 
         //define header
-        data.addColumn('string', 'To Airport - By Airline');
+        data.addColumn('number', 'Terminal');
+        data.addColumn('string', 'Flight');
         data.addColumn('string', 'DOOP [Mon-Sun]');
         data.addColumn('number', 'Quota');
         data.addColumn('number', 'Completed');
@@ -70,6 +71,7 @@
           var row = quota_data[i];
           data.addRows([
           [
+            row.DTerm,
             row.quota_id,
             row.doop,
             Number(row.Quota),
@@ -87,7 +89,7 @@
           'controlType': 'CategoryFilter',
           'containerId': 'filter_div',
           'options': {
-            'filterColumnLabel': 'To Airport - By Airline'
+            'filterColumnLabel': 'Terminal'
           }
         });
   
@@ -106,7 +108,7 @@
         dashboard.bind(tableFilter, tableChart);
 
         var view = new google.visualization.DataView(data);
-        document.getElementById("filter_div").style.display = "none";
+        // document.getElementById("filter_div").style.display = "none";
         dashboard.draw(view);
 
         //Update time info
